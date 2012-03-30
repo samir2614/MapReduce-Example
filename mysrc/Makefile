@@ -5,7 +5,7 @@ wordcount:
 	jar -cvf ./WordCount.jar -C bin/ .
 
 invindex:
-	javac -cp .:../hadoop-core-1.0.1.jar:../lib/* -d bin InvertedIndex.java XMLInputFormat.java
+	javac -cp .:../hadoop-core-1.0.1.jar:../lib/* -d bin InvertedIndex.java XmlInputFormat.java
 	jar -cvf ./InvertedIndex.jar -C bin/ .
 
 clean:
